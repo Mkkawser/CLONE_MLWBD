@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .cat {
+    @apply p-2;
+  }
+  .cat-wraper {
+    @apply flex items-center gap-2 pt-[5px];
+  }
+  .cat-value {
+    @apply text-[15px] font-thin;
+  }
+  .cat-icon-right svg {
+    @apply text-[15px] font-bold text-white;
+  }
+  .cat-wraper:hover {
+    @apply text-[red];
+  }
+  @media (min-width: 768px) {
+    .cat-value {
+      @apply text-[13px];
+    }
+  }
+}

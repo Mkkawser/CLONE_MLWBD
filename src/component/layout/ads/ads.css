@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .ads-img {
+    @apply w-[90%]  flex justify-center items-center p-4;
+  }
+  .ads-img img {
+    @apply w-[230px] object-cover;
+  }
+}

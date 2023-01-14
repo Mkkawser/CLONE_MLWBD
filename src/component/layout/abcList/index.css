@@ -1,0 +1,22 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+@layer components {
+  .abc-catagory {
+    @apply overflow-auto;
+  }
+  .abc-items {
+    @apply flex gap-8 p-2;
+  }
+  .abc-items button {
+    @apply uppercase text-[1rem];
+  }
+  @media (min-width: 768px) {
+    .abc-items {
+      display: grid;
+      grid-template-columns: repeat(27, 1fr);
+      @apply gap-0;
+    }
+  }
+}

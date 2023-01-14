@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .Bsub {
+    padding: 4px !important;
+    @apply box-border;
+  }
+  .Bsub-top {
+    @apply flex justify-between items-center;
+  }
+  .Bsub-title-top {
+    @apply border-l-[3px] ml-1 border-[#e91010] pl-2 text-[20px];
+  }
+  .Bsub-top-btn {
+    @apply box-border mr-6 flex gap-4;
+  }
+  .Bsub-title p {
+    @apply text-[17px] w-[90%] overflow-hidden h-[25px];
+  }
+  .Bsub-img img {
+    @apply w-full object-cover;
+  }
+}

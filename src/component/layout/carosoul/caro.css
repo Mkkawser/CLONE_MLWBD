@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .carosoul {
+    @apply box-border p-2;
+  }
+  .caro-img {
+    @apply relative rounded-md shadow-md;
+  }
+  .caro-img img {
+    @apply h-full w-full object-cover;
+  }
+  .caro-title {
+    @apply absolute bottom-[5px] text-[19px] p-2 text-[#fff] shadow-md;
+  }
+  @media (min-width: 768px) {
+    .caro-title {
+      @apply text-[14px];
+    }
+  }
+}

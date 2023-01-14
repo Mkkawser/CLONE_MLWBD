@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .nav {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+    @apply flex justify-between items-center box-border   p-2 bg-black;
+  }
+  .logo {
+    @apply w-1/2;
+  }
+}

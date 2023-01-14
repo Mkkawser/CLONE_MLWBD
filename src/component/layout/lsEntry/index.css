@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .lastE {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    @apply text-[16px] gap-4 w-[95%] pt-4;
+  }
+  .lastE-date {
+    @apply text-[25px] text-[red] box-border ml-2 p-2;
+  }
+  .lastE-date-name {
+    display: block;
+    @apply text-[12px] text-[white];
+  }
+  .lastE-des-title {
+    @apply font-semibold;
+  }
+  .lastE-des-body {
+    @apply text-justify text-[13px];
+  }
+  .see-all {
+    font-size: 14px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    color: red;
+  }
+}
